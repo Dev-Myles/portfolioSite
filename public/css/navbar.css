@@ -1,0 +1,79 @@
+#top-page{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+#nav-list{
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   align-items: center;
+    position: relative;
+ margin: 0 auto;
+    padding:0;
+    width: 60vw;
+}
+
+#github-logo{
+    background-image: url('/images/github-logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    width: 8vw;
+}
+
+#navbar-pic-lion{
+  width: 95vw;
+  height: 10vw;
+  background-image: url('/images/lion-background.svg');
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  text-align: start;
+
+}
+
+#email-span-top{
+   margin-top: 2vw;
+   margin-left: 2vw ;
+}
+
+#navbar-pic-chain{
+    width: 95vw;
+    height: 2vw;
+    margin: 0 auto;
+    background-image: url('/images/header-chain.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px){
+    #navbar-pic-lion{
+        width: 23vw;
+        height: 23vw;
+    
+      }
+
+      
+    #navbar-pic-chain{
+        height: 4vw;
+    }
+
+
+    #nav-list{
+        font-size: 4.6vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        padding:0;
+        width: 60vw;
+}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "portfolioSite",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "My portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dev-Myles/portfolioSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dev-Myles/portfolioSite/issues"
+  },
+  "homepage": "https://github.com/Dev-Myles/portfolioSite#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "nodemon": "^2.0.15"
+  }
+}

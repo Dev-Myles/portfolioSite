@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="41.344643mm"
+   height="25.024904mm"
+   viewBox="0 0 41.344643 25.024904"
+   version="1.1"
+   id="svg1837"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="word-background.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1839"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.8516629"
+     inkscape:cx="19.373863"
+     inkscape:cy="75.73419"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs1834">
+    <rect
+       x="112.91618"
+       y="224.17183"
+       width="499.82016"
+       height="338.74854"
+       id="rect3506" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter12730"
+       x="-0.01239715"
+       y="-0.021368649"
+       width="1.0247943"
+       height="1.0427373">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.77332667"
+         id="feGaussianBlur12732" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-28.528459,-60.824892)">
+    <g
+       id="g13276">
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,-0.62133339,0.85433355)"
+         id="text3504"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 300;white-space:pre;shape-inside:url(#rect3506);opacity:0.210762;fill:#666666;fill-opacity:1;stroke:none;filter:url(#filter12730)"><tspan
+           x="112.91602"
+           y="260.92969"
+           id="tspan13288">Dev_
+</tspan><tspan
+           x="112.91602"
+           y="310.92969"
+           id="tspan13290">			Myles</tspan></text>
+      <text
+         xml:space="preserve"
+         transform="matrix(0.26458333,0,0,0.26458333,-1.8640004,-0.69900019)"
+         id="text11576"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=300';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 300;white-space:pre;shape-inside:url(#rect3506);opacity:0.778027;fill:#000000;fill-opacity:1;stroke:none"><tspan
+           x="112.91602"
+           y="260.92969"
+           id="tspan13292">Dev_
+</tspan><tspan
+           x="112.91602"
+           y="310.92969"
+           id="tspan13294">			Myles</tspan></text>
+    </g>
+  </g>
+</svg>

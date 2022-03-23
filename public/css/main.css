@@ -1,0 +1,261 @@
+
+
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: hsla(0, 0%, 81%, 1);
+    background: white;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-attachment: fixed;
+    background-position: center;
+   
+
+
+   }
+
+   @font-face {
+       font-family: 'Poppins-Regular';
+       src: url('/fonts/Poppins-Regular.ttf');
+   }
+
+   @font-face {
+       font-family: 'RedHatMono-Regular';
+       src: url('/fonts/RedHatMono-Regular.ttf');
+   }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: 'RedHatMono-Regular';
+}
+
+p, li{
+    font-family: 'Poppins-Regular';
+}
+
+ul{
+    padding: 0;
+    margin: 0 auto;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+#terminal{
+    
+   height: 30vh;
+   width: 95vw;
+    margin: 0 auto;
+    background-color: black;
+    border: 2px solid silver;
+    border-radius: 15px;
+    box-shadow: 0 0 30px black;
+}
+
+#terminal-bar{
+    background-color: white;
+    height: 2vw;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+
+#terminal-logo{
+    background-image: url('/images/cmd-logo.svg');
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: end;
+    width: 9%;
+    margin-left: .5vw;
+   
+}
+
+#terminal-x{
+    margin-right: 1vw;
+    font-size: 1.3vw;
+    transition: ease-in-out .15s;
+    width: 1.45vw;
+    text-align: center;
+    border-radius: 2px;
+}
+
+#terminal-x:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#terminal-name, #terminal-x{
+    font-family: 'RedHatMono-Regular';
+}
+
+#terminal-start-line{
+    font-size: 4vw;
+    font-family: 'RedHatMono-Regular';
+    color: white;
+}
+
+#linking-line {
+    animation: blinker 1.3s step-end infinite;
+  }
+  
+  @keyframes blinker {
+    0% {
+      color: white;
+    }
+    50%{
+        color: black;
+    }
+  }
+
+
+#tech-banner{
+    display: flex;
+    flex-direction: row;
+  
+    width: 100%;
+ 
+    margin: 0 auto;
+ 
+    padding: 1vw;
+    padding-left: 1.8vw;
+    margin-bottom: 1vw;
+    margin-top: 6vh;
+    margin-left: -1%;
+
+}
+
+#tech-banner-pic{
+    height: 50vh;
+    background-size: contain;
+    border-bottom: 3px solid red;
+    border-left: none;
+}
+
+#tech-banner-p-body{
+    height: min-content;
+    width: 50%;
+}
+
+#tech-banner-pic{
+    border-bottom: none;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+#tech-banner-pic img{
+    width: 40vw;
+    height: 60vh;
+
+}
+
+#tech-banner-p{
+    font-size: 2vw;
+}
+
+#tech-banner-list{
+    display: flex;
+    flex-direction: row;
+}
+
+#project-banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#project1, #project2{
+    padding: 1.3vw;
+    background: rgb(241,241,241);
+    background: linear-gradient(180deg, rgb(241, 241, 241) 14%, rgb(255, 247, 247) 99%); 
+   
+    box-shadow: 0 0 30px black;
+}
+
+#project1-pic, #project2-pic{
+    height: 20vh;
+    background-color: red;
+}
+
+#project1-p, #project2-p{
+    width: 65ch;
+}
+
+@media only screen and (max-width: 1000px) {
+    #tech-banner{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 3vh;
+    }
+    
+    #tech-banner div{
+        width: 92vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #tech-banner-pic{
+        height: 50vh;
+        background-size: contain;
+        border-bottom: 3px solid red;
+        border-left: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    #tech-banner-pic img{
+        width: 95vw;
+        height: 50vh;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #tech-banner-p-body{
+        height: min-content;
+    }
+    
+    #tech-banner-p, #tech-banner-list{
+        font-size: 4.3vw;
+    }
+    
+ 
+
+    #project-banner{
+        flex-direction: column;
+    }
+    
+    #project1, #project2{
+       
+        padding: 2.3vw;
+        width: min-content;
+        margin: 0 auto;
+         margin-top: 3vh;
+   
+    }
+    
+    /* #project1-pic, #project2-pic{
+        height: 20vh;
+        background-color: red;
+    } */
+
+    #project1-p, #project2-p{
+        width: 87vw;
+    }
+    
+
+}
