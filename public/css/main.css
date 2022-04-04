@@ -163,8 +163,8 @@ button{
 }
 
 video{
-   height: 400px;
-    flex-grow: 1; 
+   height: 300px;
+   width: 600; 
 }
 
 #videos{
