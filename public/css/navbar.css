@@ -1,6 +1,6 @@
 #top-page{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     flex-direction: row;
 }
@@ -12,27 +12,71 @@
     justify-content: space-around;
    align-items: center;
     position: relative;
- margin: 0 auto;
     padding:0;
-    width: 60vw;
+    width: 40vw;
+    margin-right: 2vw;
+}
+
+#nav-list li{
+    overflow: hidden;
+    position: relative;
+    width: 9vw;
+    display: flex;
+    justify-content: end;
+ 
+}
+
+
+
+#github-logo, #mail-logo{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+
+#github-logo:hover, #mail-logo:hover{
+    cursor: pointer;
 }
 
 #github-logo{
-    background-image: url('/images/github-logo.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    width: 8vw;
+    width: 2.5vw;
+    height: 2.5vw;
+}
+
+#mail-logo{
+    width: 2.1vw;
+    height: 2.1vw;
+   
+}
+
+
+
+#github-name, #contact-name{
+    position: absolute;
+    right: -100px;
+    transition: ease-in-out .65s;
+}
+
+
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+@-webkit-keyframes slide{
+    100% { left: 0; }
 }
 
 #navbar-pic-lion{
-  width: 95vw;
+  width: 20vw;
   height: 10vw;
   background-image: url('/images/lion-background.svg');
 
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 auto;
+ 
   text-align: start;
 
 }
@@ -43,14 +87,16 @@
 }
 
 #navbar-pic-chain{
-    width: 95vw;
-    height: 2vw;
+    width: 78.42vw;
+    height: 1vw;
     margin: 0 auto;
     background-image: url('/images/header-chain.svg');
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
 }
+
+
 
 @media only screen and (max-width: 1000px){
     #navbar-pic-lion{
@@ -72,8 +118,28 @@
         justify-content: space-around;
         align-items: center;
         position: relative;
-        margin: 0 auto;
+      
         padding:0;
         width: 60vw;
 }
+
+
+
+#nav-list li{
+
+    width: 32vw;
+    height: 8.8vw;
+}
+
+#github-logo{
+    width: 8.5vw;
+    height: 8.5vw;
+}
+
+#mail-logo{
+    width: 8.1vw;
+    height: 8.1vw;
+   
+}
+
 }

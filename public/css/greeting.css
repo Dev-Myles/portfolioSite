@@ -1,0 +1,79 @@
+
+#greeting-banner{
+    margin: 0 auto;
+    position: relative;
+    margin-top: 13vh;
+    margin-bottom: 18vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 55vw;
+    left: 0;
+    padding: 1vw;
+}
+
+#greeting-pic{
+    background-image: url('/images/grab-banner-pic.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45vw;
+    height: 2vw;
+    margin-bottom: 4vh;
+   
+}
+
+#greeting-about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#greeting-about p{
+    width: 65vw;
+    text-align: center;
+  
+    font-size: 2.8vw;
+    margin: 0;
+}
+
+#lets-talk-btn{
+    background-color: var(--accent-color);
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1vw 2.5vw 1vw 2.5vw;
+    
+    border-radius: 100000px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 2vh;
+}
+
+#lets-talk-btn:hover{
+    box-shadow: 0 2px 15px black;
+}
+
+@media only screen and (max-width: 1000px){
+    #greeting-banner{
+      
+        margin-top: 9vh;
+        margin-bottom: 5vh;
+       
+    }
+
+    #greeting-pic{
+    
+        width: 96vw;
+        height: 9vw;
+        margin-bottom: 0vh;
+       
+    }
+
+    #greeting-about p{
+        width: 92vw;
+        font-size: 7.8vw;
+      
+    }
+}

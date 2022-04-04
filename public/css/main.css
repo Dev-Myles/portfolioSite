@@ -1,47 +1,62 @@
 
+:root{
+    --font-color:  hsla(0, 0%, 24%, 1);
+    --accent-color: hsla(153, 63%, 48%, 1);
+  
+}
 
 body{
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: hsla(0, 0%, 81%, 1);
-    background: white;
-    height: 100vh;
+
+    background-color: rgb(240, 240, 240);
     position: relative;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-attachment: fixed;
-    background-position: center;
+    padding-bottom: 15vh;
+    font-family: 'IBMPlexSansArabic-Light';
+}
+
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url('/fonts/Jost-Medium.ttf');
+}
+
+   @font-face {
+       font-family: 'IBMPlexSansArabic-Light';
+       src: url('/fonts/IBMPlexSansArabic-Light.ttf');
+   }
+
+   @font-face {
+    font-family: 'IBMPlexSansArabic-SemiBold';
+    src: url('/fonts/IBMPlexSansArabic-SemiBold.ttf');
+}
+
+
+
    
-
-
-   }
-
-   @font-face {
-       font-family: 'Poppins-Regular';
-       src: url('/fonts/Poppins-Regular.ttf');
-   }
-
-   @font-face {
-       font-family: 'RedHatMono-Regular';
-       src: url('/fonts/RedHatMono-Regular.ttf');
-   }
 
 a{
     text-decoration: none;
     color: black;
+    transition: ease-in-out .2s;
 }
 
-h1{
-    font-family: 'RedHatMono-Regular';
+
+
+h1, h2, legend{
+    font-family: 'Jost-Medium';
+    font-weight: bolder;
+    color: var(--font-color);
 }
 
-p, li{
-    font-family: 'Poppins-Regular';
+p, li, a, input, .input-name, #email-message{
+    font-family: 'IBMPlexSansArabic-Light';
+    color: var(--font-color);
+    font-weight: bold;
 }
 
 ul{
     padding: 0;
-    margin: 0 auto;
+   
 }
 
 li{
@@ -49,213 +64,201 @@ li{
     list-style: none;
 }
 
-#terminal{
-    
-   height: 30vh;
-   width: 95vw;
-    margin: 0 auto;
-    background-color: black;
-    border: 2px solid silver;
-    border-radius: 15px;
-    box-shadow: 0 0 30px black;
+button{
+    border: none;
 }
 
-#terminal-bar{
-    background-color: white;
-    height: 2vw;
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  
-
+#bold-word{
+    font-family: 'IBMPlexSansArabic-SemiBold';
+    font-weight: bold;
+    text-shadow: 5px 1px 10px silver;
+    color: var(--accent-color);
 }
-
-#terminal-logo{
-    background-image: url('/images/cmd-logo.svg');
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    justify-content: end;
-    width: 9%;
-    margin-left: .5vw;
-   
-}
-
-#terminal-x{
-    margin-right: 1vw;
-    font-size: 1.3vw;
-    transition: ease-in-out .15s;
-    width: 1.45vw;
-    text-align: center;
-    border-radius: 2px;
-}
-
-#terminal-x:hover{
-    background-color: red;
-    color: white;
-    cursor: pointer;
-}
-
-#terminal-name, #terminal-x{
-    font-family: 'RedHatMono-Regular';
-}
-
-#terminal-start-line{
-    font-size: 4vw;
-    font-family: 'RedHatMono-Regular';
-    color: white;
-}
-
-#linking-line {
-    animation: blinker 1.3s step-end infinite;
-  }
-  
-  @keyframes blinker {
-    0% {
-      color: white;
-    }
-    50%{
-        color: black;
-    }
-  }
 
 
 #tech-banner{
     display: flex;
-    flex-direction: row;
-  
-    width: 100%;
- 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70vw;
     margin: 0 auto;
- 
     padding: 1vw;
     padding-left: 1.8vw;
     margin-bottom: 1vw;
     margin-top: 6vh;
-    margin-left: -1%;
+
+}
+
+#tech-banner-layout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tech-banner-header{
+    font-size: 4.4vw;
+    margin-bottom: 0;
 
 }
 
 #tech-banner-pic{
-    height: 50vh;
+  
     background-size: contain;
-    border-bottom: 3px solid red;
+  
     border-left: none;
 }
 
 #tech-banner-p-body{
     height: min-content;
-    width: 50%;
+    width: 70%;
+    margin-right: 3vw;
 }
+
 
 #tech-banner-pic{
-    border-bottom: none;
-    height: fit-content;
-    margin: 0 auto;
-}
-
-#tech-banner-pic img{
-    width: 40vw;
+    width: 60vw;
     height: 60vh;
-
+    background-image: url('/images/tech-banner.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #tech-banner-p{
-    font-size: 2vw;
+    font-size: 2.4vw;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
 }
 
 #tech-banner-list{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.15vw;
 }
 
 #project-banner{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 8vw;
+}
+
+.project-titles{
+   
+    font-size: 2vw;
+    font-family: 'Jost-Medium';
 }
 
 #project1, #project2{
     padding: 1.3vw;
-    background: rgb(241,241,241);
-    background: linear-gradient(180deg, rgb(241, 241, 241) 14%, rgb(255, 247, 247) 99%); 
-   
-    box-shadow: 0 0 30px black;
+    background-color: white; 
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
 
-#project1-pic, #project2-pic{
-    height: 20vh;
-    background-color: red;
+video{
+   height: 400px;
+    flex-grow: 1; 
+}
+
+#videos{
+    margin: 0 auto;
 }
 
 #project1-p, #project2-p{
-    width: 65ch;
+    width: 40vw;
+    font-size: 1.2vw;
+}
+
+#bottom-page{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+#live-icon{
+    width: 80px;
+    height: 80px;
+    margin-right: 2vw;
+}
+
+#project-links a:hover{
+    transform: scale(1.1);
+}
+
+#project-links a div{
+    margin-bottom: 0;
+}
+
+#project-links{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 @media only screen and (max-width: 1000px) {
-    #tech-banner{
-        display: flex;
-        flex-direction: column-reverse;
-        padding-bottom: 3vh;
+  
+    #tech-banner-pic {
+        width: 85vw;
+        height: 85vw;
+       
+        background-image: url('/images/portfolio-programming-logos.svg');
     }
-    
-    #tech-banner div{
-        width: 92vw;
-        margin: 0 auto;
+
+    #tech-banner-header{
+        font-size: 8vw;
+    }
+
+    #tech-banner-p{
+        font-size: 5.9vw;
         text-align: center;
+        font-weight: 600;
     }
-    
-    #tech-banner-pic{
-        height: 50vh;
-        background-size: contain;
-        border-bottom: 3px solid red;
-        border-left: none;
-        display: flex;
-        justify-content: center;
-    }
-
-    
-    #tech-banner-pic img{
-        width: 95vw;
-        height: 50vh;
-        margin: 0 auto;
-        display: block;
-    }
-
-    #tech-banner-p-body{
-        height: min-content;
-    }
-    
-    #tech-banner-p, #tech-banner-list{
-        font-size: 4.3vw;
-    }
-    
- 
 
     #project-banner{
         flex-direction: column;
     }
     
     #project1, #project2{
-       
         padding: 2.3vw;
         width: min-content;
         margin: 0 auto;
          margin-top: 3vh;
-   
     }
     
-    /* #project1-pic, #project2-pic{
-        height: 20vh;
-        background-color: red;
-    } */
-
     #project1-p, #project2-p{
         width: 87vw;
     }
     
+    #bottom-page{
+        flex-direction: column;
+    }
+
+    .project-titles{
+   
+        font-size: 8vw;
+      
+    }
+
+    #project1-p, #project2-p{
+        width: 92vw;
+        font-size: 5.2vw;
+    }
+
+    video{
+        height: 180px;
+         flex-grow: 1; 
+     }
+     #videos{
+        margin-top: 3vh;
+    }
 
 }

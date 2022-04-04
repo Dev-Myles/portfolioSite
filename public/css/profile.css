@@ -1,0 +1,28 @@
+
+
+#profile-body{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+#profile-p{
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 1000px){
+    #profile-p{
+        font-size: 4.5vw;
+    }
+
+    
+#profile-body{
+    width: 92%;
+   
+}
+}

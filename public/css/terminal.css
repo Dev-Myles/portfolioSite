@@ -1,0 +1,280 @@
+
+#form-body{
+    margin-top: 3vw;
+    border-radius: 30px;
+    padding: 1vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    overflow: hidden;
+    
+}
+
+#contact-form{
+    display: flex;
+   
+   flex-direction: column;
+
+}
+
+#contact-form input{
+    width: 85%;
+    border-radius: 30px;
+    border: none;
+    font-size: 6vw;
+    padding: 1.2vw;
+    padding-left: 12vw;
+ 
+}
+
+#contact-form input:focus, #email-message:focus{
+    outline: 2px solid var(--accent-color);
+}
+
+.input-name{
+    margin-left: 1vw;
+    font-size: 5.4vw;
+}
+
+#company-input, #name-input, #email-input{
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#email-input{
+    background-image: url('/images/mail.svg'); 
+   
+}
+
+#email-header{
+    margin-top: 0; 
+}
+#email-input:focus{
+    background-image: url('/images/mail-green.svg');  
+}
+
+#name-input{
+    background-image: url('/images/user-grey.svg');  
+}
+#name-input:focus{
+    background-image: url('/images/user-green.svg');  
+}
+
+#company-input{
+   background-image: url('/images/organisation-grey.svg');  
+}
+
+#company-input:focus{
+    background-image: url('/images/organisation-green.svg');
+}
+
+#email-message{
+    border: none;
+    margin: 0 auto;
+    padding: 3vw;
+    font-size: 5vw;
+    resize: none;
+    overflow-y: scroll;
+    height: 30vh;
+    width: 88%;
+}
+
+fieldset{
+   border: 0;
+}
+
+legend{
+    font-size: 10vw;
+    color: var(--accent-color);
+}
+
+.contact-btn-copy{
+  
+    background-color: var(--accent-color);
+    color: white;
+ 
+    width: fit-content;
+    padding: 4vw;
+    font-size: 6.3vw;
+    font-weight: bolder;
+    border-radius: 1000px;
+
+    
+}
+
+#other-contact{
+    margin-bottom: 9vh;
+}
+
+#profile-pic{
+    position: relative;
+    background-image: url('/images/greetings-banner-pic.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+   left: 8vw;
+}
+
+#other-contact p{
+    font-size: 5.1vw;
+    text-align: center;
+
+}
+
+#lets-talk-btn{
+    padding: 4vw;
+}
+
+#copy-click{
+    position: absolute;
+    font-size: 4.5vw;
+    color: var(--font-color);
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+   margin-left: 1vw;
+}
+
+#copy-click.active{
+    animation: copied 1s ease-in-out;
+}
+
+@keyframes copied {
+    0%{
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(17px);
+    }
+    25%{
+        opacity: .5;
+        pointer-events: none;
+        transform: translateY(14px);
+    }
+    40%{
+        opacity: 1;
+        pointer-events: none;
+        transform: translateY(11px);
+    }
+    75%{
+        opacity: 1;
+        pointer-events: none;
+        transform: translateY(6px);
+    }
+    90%{
+        opacity: .5;
+        pointer-events: none;
+        transform: translateY(2px);
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-3px);
+    }
+}
+
+#copy-btn-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+   
+@media only screen and (min-width: 1000px){
+    #contact-form input{
+        border-radius: 30px;
+        font-size: 1.1vw;
+        padding: .6vw;
+        padding-left: 3vw;
+        transition: ease-in-out .3s;
+        outline: none;
+    }
+
+    #copy-click{
+        font-size: 1.5vw;
+    }
+
+    #contact-form input:hover, #email-message:hover{
+        position: relative;
+        box-shadow: 0px 0px 12px var(--accent-color);  
+        transition: all 0.3s ease-in-out; 
+        z-index: 3;
+    }
+    
+    .input-name{
+        margin-top: 2.3vw;
+        font-size: 1.4vw;
+        margin-bottom: 0;
+    }
+    
+    #email-message{
+        border: none;
+        margin: 0 auto;
+        padding: .5vw;
+        font-size: 1.1vw;
+        
+    }
+
+    #form-body{
+       margin: 0 auto;
+       width: 65vw;
+        border-radius: 30px;
+        padding: 1vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-grow: 1;
+    
+    }
+
+    legend{
+        font-size: 5vw;
+    }
+
+    #profile-pic{
+   
+        width: 25vw;
+        height: 25vw;
+        margin: 0 auto;
+        left: 4vw;
+    }
+
+    #other-contact p{
+        font-size: 2.1vw;
+        text-align: center;
+        width: 34ch;
+    }
+
+    .contact-btn-copy{
+  
+        background-color: var(--accent-color);
+        color: white;
+      
+        width: fit-content;
+        padding: 1vw;
+        font-size: 1.3vw;
+        border-radius: 1000px;
+        font-family: 'IBMPlexSansArabic-Light';
+        
+    }
+
+    #lets-talk-btn{
+        padding: 1vw;
+    }
+    
+    .contact-btn-copy, #lets-talk-btn{
+       transition: ease-in-out .3s; 
+    }
+    
+    .contact-btn-copy:hover, #lets-talk-btn:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        box-shadow: 0 0  15px black;
+    }
+
+}
+   

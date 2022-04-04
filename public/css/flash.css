@@ -1,0 +1,42 @@
+
+.alert-success, .alert-failure{
+      font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--font-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+}
+
+.alert-success{
+    background-color: var(--accent-color);
+}
+
+.alert-failure{
+    background-color:  rgb(241, 50, 50);
+    color: black;
+}
+
+.alert-success div, .alert-failure div{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+#x-out-mess{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: ease-in-out .3s;
+}
+
+#x-out-mess:hover{
+    color: black;
+    cursor: pointer;
+    background-color: rgb(241, 50, 50);
+}

@@ -1,0 +1,26 @@
+
+
+<div id="form-body">
+
+    <div id="other-contact">
+        <div id="profile-pic"></div>
+        <p>Don't want to use the form? Copy my email below and use your favorite mailbox!</p>
+        <div id="copy-btn-body">
+        <div class="contact-btn-copy">Copy Email  <img src="/images/copy.svg" alt=""> </div>
+        <div ><span id="copy-click">Copied!</span></div>
+        </div>
+    </div>
+
+
+    <form action="/sendemail" method="post" id="contact-form">
+        <span class="input-name" id="email-header">Email</span>
+        <input type="email" name="email[email]" id="email-input" placeholder="name@email.com" required>
+        <span class="input-name">Name</span>
+        <input type="text" name="email[name]" id="name-input" placeholder="Laszlo Kreizler" required>
+        <span class="input-name">Company</span>
+        <input type="text" name="email[company]" id="company-input" placeholder="Space Guild" required>
+        <span class="input-name">Message</span>
+        <textarea name="email[message]" id="email-message" cols="30" rows="10" placeholder="I would like to offer you a 10 million dollar signing bonus..." required></textarea>
+        <button id="lets-talk-btn" type="submit">Send Message <img src="/images/mail-white.svg" alt=""></button>
+    </form>
+</div>

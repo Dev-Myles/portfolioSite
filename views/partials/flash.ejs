@@ -1,0 +1,14 @@
+<% if(success && success.length) {%>
+    <div class="alert-success" id="flash-message" role="alert">
+       <div> <%= success %></div> 
+      <div id="x-out-mess">X</div>
+    </div>
+    <% } %>
+    
+    <% if(error && error.length) {%>
+    <div class="alert-failure" id="flash-message" role="alert">
+        <div><%= error %></div>
+        <div id="x-out-mess">X</div>
+        </button>
+    </div>
+    <% } %>

@@ -5,60 +5,81 @@
     
 </head>
 <body>
+    <%- include('../partials/flash') %> 
     <%- include('../partials/navbar') %> 
-    <h1>Hey, this is Myles.</h1>
-   <div id="terminal">
-       <div id="terminal-bar">
-           <div id="terminal-logo">
-            <span id="terminal-name">Command Prompt</span>   
-           </div>
-           
-         <span id="terminal-x">X</span>
-       </div>
-       <div id="terminal-body">
-           <span id="terminal-start-line">C:\web_developers\Dev_Myles><span id="blinking-line">_</span></span>
-        </div>
-   </div> 
 
+    <div id="greeting-banner">
+        <div id="greeting-pic"></div>
+        <div id="greeting-about">
+            <p>Building my <span id="bold-word">future</span> one line of code at a time, I can help <span id="bold-word">you</span> along the way.</p>
+            <a id="lets-talk-btn" href="/#bottom-page">Connect</a>
+        </div>
+    </div>
+    <div id="navbar-pic-chain"></div>
+
+    <div id="profile-banner">
+
+    </div>
+
+ <%- include('../partials/profile') %> 
 
    <div id="tech-banner">
-       <div id="tech-banner-p-body">
-            <p id="tech-banner-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit delectus porro, eveniet non atque sunt velit explicabo nostrum, iste tempora praesentium quasi, pariatur molestias quisquam repellat tenetur ipsam laboriosam doloribus.</p>
-            <ul id="tech-banner-list">
-                <ul>
-                    <li>HTML</li>
-                    <li>InkScape</li>
-                    <li>JavaScript</li>
-                </ul>
-                <ul>
-                    <li>Node JS</li>
-                    <li>Express JS</li>
-                    <li>MongoDB</li>
-                </ul>
-                <ul>
-                    <li>Heroku</li>
-                    <li>Git</li>
-                    <li>CSS</li>
-                </ul>
-            </ul>
-        </div>
-       <div id="tech-banner-pic">
-            <img src="/images/portfolio-programming-logos.svg" alt="tech-banner-picture" >
-       </div>
+       <h2 id="tech-banner-header">Technical Skills</h2> 
+        <p id="tech-banner-p">Technologies I used for my projects:</p>
+        <div id="tech-banner-pic"></div>
    </div>
 
    <div id="project-banner">
        <div id="project1">
-           <div id="project1-pic"></div>
+        <div id="videos">
+            <video playsinline controls >
+             <source src="/videos/rockbottomguild.mp4"  type="video/mp4">
+            </video>
+         </div>
            <hr>
-           <p id="project1-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore obcaecati vel, repellendus a adipisci ipsum! Iste quasi, architecto, voluptate aliquam aut deleniti quo pariatur unde beatae natus alias maiores similique!</p>
+           <p id="project1-p"><span class="project-titles">Rock Bottom Guild Website</span><br>
+            Rock Bottom Guild is a local fabricator that specializes in creating custom hitch signs while offering 
+            other services. This was my first commission, I still manage and update the site based on the business owners request.
+            Hosted with Heroku and is ssl certified through Cloudflare.
+          
+           </p>
+           <div id="project-links">
+            <a href="https://www.rockbottomguild.com"><img src="/images/live-icon.svg" alt="" id="live-icon"></a> 
+            <a href="https://gitfront.io/r/dev-myles/574be257efe50ba359f8359cad9c60f14a1c02ef/Rockbottomguild/"><div id="footer-image">Repo <img src="/images/github-logo.svg" alt="" id="footer-git-logo"></div></a> 
+           </div>
        </div>
        <div id="project2">
-            <div id="project2-pic"></div>
+        <div id="videos">
+           <video playsinline controls >
+            <source src="/videos/dungeonbuilder.mp4"  type="video/mp4">
+           </video>
+        </div>
             <hr>
-            <p  id="project2-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore obcaecati vel, repellendus a adipisci ipsum! Iste quasi, architecto, voluptate aliquam aut deleniti quo pariatur unde beatae natus alias maiores similique!</p>
+            <p  id="project2-p"><span class="project-titles">Dungeon Builder</span><br>
+                Dungeon Builder is a website that helps people deepen their table top fantasy game experience.
+                Users can create, edit, and delete documents like weapons and armor (and many more) by using
+                the site's easy to fill out forms. Uses email verification, JWTs, session cookies, validation, 
+                and sanitization.
+
+            </p>
+            <div id="project-links">
+             <a href="https://dungeon-builder.herokuapp.com/"><img src="/images/live-icon.svg" alt="" id="live-icon"></a> 
+             <a href="https://gitfront.io/r/dev-myles/53dd256bc61466da0979e9b8ebb3a122c2aa984f/dndbuilder/"><div id="footer-image">Repo <img src="/images/github-logo.svg" alt="" id="footer-git-logo"></div></a> 
+            </div>
        </div>
    </div>
+  
+
+    <fieldset id="bottom-page">
+        <legend>Contact Me</legend>
+        <%- include('../partials/contact-form') %>   
+    </fieldset>
     
+
+    <%- include('../partials/footer') %>  
+    <div id="navbar-pic-chain"></div> 
+    <script src="/js/animations.js"></script>
+    <script src="/js/copyText.js"></script>
+    <script src="/js/xOut.js"></script>
 </body>
 </html>
