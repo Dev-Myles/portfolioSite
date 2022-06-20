@@ -16,7 +16,7 @@ const filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(filename);
 
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.use(express.static("public"));

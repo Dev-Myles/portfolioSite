@@ -20,7 +20,7 @@
 }
 
 .alert-success div, .alert-failure div{
-    width: 50%;
+   margin: 0 auto;
     display: flex;
     justify-content: end;
 }
@@ -29,6 +29,7 @@
     width: 20px;
     height: 20px;
     padding: 5px;
+    margin-left: 10px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
